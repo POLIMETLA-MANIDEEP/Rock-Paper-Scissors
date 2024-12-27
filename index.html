@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="scores">
+            <p>Computer : <span id="computer_score">0</span></p>
+            <p>You : <span id="user_score">0</span></p>
+        </div>
+        <div class="weapons">
+            <button onclick="checker('rock')">
+                <i class="fa-solid fa-hand-rock" style="font-size: 30px; color: black;"></i>
+            </button>
+            <button onclick="checker('paper')">
+                <i class="fa-solid fa-hand-paper" style="font-size: 30px; color: black;"></i>
+            </button>
+            <button onclick="checker('scissor')">
+                <i class="fa-solid fa-hand-scissors" style="font-size: 30px; color: black;"></i>
+            </button>
+        </div>
+        <div class="details">
+            <p id="user_choice"></p>
+            <p id="comp_choice"></p>
+            <p id="result"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
